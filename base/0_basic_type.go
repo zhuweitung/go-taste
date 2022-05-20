@@ -49,4 +49,15 @@ func main() {
 	var float64Num float64 = 0.1
 	fmt.Println("float64 size is", unsafe.Sizeof(float64Num))
 
+	// 多变量连续定义
+	numberA, numberB := 1, 2
+	fmt.Println(numberA, numberB)
+
+	// 变量组
+	var (
+		numberC, numberD = 3, 4
+		numberE, numberF = 9.99, 100
+	)
+	fmt.Println(numberC, numberD, numberE, numberF)
+
 }
